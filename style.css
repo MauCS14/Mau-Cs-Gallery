@@ -32,19 +32,17 @@ body {
   padding: 20px;
 }
 nav {
-  margin-left: 420px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the navigation items */
+  flex-wrap: wrap;
 }
 
 nav ul li {
-	display: inline-block;
-	list-style: none;
-	margin: 10px 20px;
+  display: inline-block;
+  list-style: none;
+  margin: 10px;
 }
-
 nav ul li a {
 	color: #fff;
 	text-decoration: none;
@@ -140,4 +138,40 @@ nav ul li a:hover {
   background: #262626;
   font-weight: 300;
   text-transform: capitalize;
+}
+/* Add this at the end of your existing CSS */
+
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .container1 {
+    padding: 10px;
+  }
+  .card figcaption {
+    opacity: 1;
+    transform: none;
+  }
+  nav {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 10px 10px;
+  }
+
+  .container h1 {
+    margin: 20px 10px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 48%;
+    margin-bottom: 10px;
+    margin-right: 2%;
+  }
 }
